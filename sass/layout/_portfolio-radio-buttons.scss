@@ -1,0 +1,58 @@
+.portfolio {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__radio-buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__radio-buttons-item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:nth-of-type(n + 4) {
+      margin-top: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      &:nth-of-type(n + 4) {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &__buttons {
+    cursor: pointer;
+    line-height: 1.63;
+    padding: 6px 22px;
+    background: var(--radio-button-section-background);
+    border: none;
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--transition-cubic),
+      background-color 250ms var(--transition-cubic),
+      box-shadow 250ms var(--transition-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--h1-button-text-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+  }
+}

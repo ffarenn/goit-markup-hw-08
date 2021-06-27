@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--hero-footer-background);
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
+
+  &__container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__container {
+      width: 450px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo_color {
+    color: var(--h1-button-text-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__address-section {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &__address-section {
+      margin-right: 165px;
+    }
+  }
+
+  &__address-box {
+    margin-top: 20px;
+    margin-right: 0;
+    font-style: normal;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__address-box {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__address-box {
+      margin-bottom: 0;
+    }
+  }
+
+  &__address-list {
+    margin-top: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__address-list {
+      margin-top: 9px;
+    }
+  }
+
+  &__address-text {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--h1-button-text-color);
+  }
+
+  &__contact-links {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-link-color);
+  }
+
+  &__social-list_margins {
+    margin-top: 20px;
+  }
+
+  &__social-link_bgcolor {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__social-icon_color {
+    fill: var(--h1-button-text-color);
+  }
+
+  &__box-text {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--h1-button-text-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__box-text {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__box-text {
+      text-align: center;
+      margin-top: 60px;
+    }
+  }
+}

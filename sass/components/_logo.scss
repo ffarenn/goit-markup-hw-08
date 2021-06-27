@@ -1,0 +1,14 @@
+.logo {
+  @include font($fs: 24px, $lh: 28px, $fw: 700);
+  font-family: var(--secondary-font);
+  // font-size: 26px;
+  // line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font($fs: 26px, $lh: 31px, $fw: 700);
+}
+}
+
+

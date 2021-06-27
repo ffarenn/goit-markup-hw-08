@@ -1,0 +1,17 @@
+.modal-btn {
+  @include font($fs: 16px, $lh: 31px, $fw: 700);
+  font-weight: bold;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  color: var(--h1-button-text-color);
+  background: var(--accent-color);
+  box-shadow: var(--button-shadow);
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

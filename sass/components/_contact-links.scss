@@ -1,0 +1,30 @@
+.contacts__list {
+  margin-top: 8px;
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.contacts__link {
+  @include font($fs: 14px, $lh: 16px, $fw: 500);
+  transition: color 250ms var(--transition-cubic),
+    fill 250ms var(--transition-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__footer-margin-top {
+  @media screen and (min-width: 1200px) {
+    margin-top: 10px;
+  }
+}

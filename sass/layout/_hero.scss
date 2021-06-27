@@ -1,0 +1,102 @@
+.hero {
+  background: var(--hero-footer-background);
+
+  &__container {
+    flex-direction: column;
+  }
+
+  &-background {
+    width: 100%;
+    min-width: 280px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        $HeroBackgroundGradient,
+        $HeroBackgroundGradient
+      ),
+      url(../images/hero-bg/hero-image-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $HeroBackgroundGradient,
+          $HeroBackgroundGradient
+        ),
+        url(../images/hero-bg/hero-image-mob@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+          $HeroBackgroundGradient,
+          $HeroBackgroundGradient
+        ),
+        url(../images/hero-bg/hero-image-tablet.jpg);
+      height: 400px;
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 2dppx) and (min-width: 768px) {
+      & {
+        background-image: linear-gradient(
+            $HeroBackgroundGradient,
+            $HeroBackgroundGradient
+          ),
+          url(../images/hero-bg/hero-image-tablet@2x.jpg);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+          $HeroBackgroundGradient,
+          $HeroBackgroundGradient
+        ),
+        url(../images/hero-bg/hero-image-desktop.jpg);
+      height: 600px;
+      max-width: 1600px;
+
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      (min-resolution: 192dpi) and (min-width: 1200px),
+      (min-resolution: 2dppx) and (min-width: 1200px) {
+      & {
+        background-image: linear-gradient(
+            $HeroBackgroundGradient,
+            $HeroBackgroundGradient
+          ),
+          url(../images/hero-bg/hero-image-desktop@2x.jpg);
+      }
+    }
+  }
+
+  &__title {
+    @include font($fs: 26px, $lh: 42px, $fw: 900);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--h1-button-text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+      @include font($fs: 44px, $lh: 60px, $fw: 900);
+      width: 696px;
+      margin: 0 auto;
+    }
+  }
+
+  &__modal-btn_margin_top {
+    margin-top: 30px;
+  }
+}
