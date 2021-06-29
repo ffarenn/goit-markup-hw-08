@@ -181,7 +181,6 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  z-index: 100;
 }
 .mobile-menu__close-btn__icon-close {
   width: 18px;
@@ -443,7 +442,6 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
