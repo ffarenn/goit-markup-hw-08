@@ -17,6 +17,13 @@
     display: none;
   }
 
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    // z-index: 100;
+  }
+
   &__close-btn {
     position: absolute;
     top: 10px;
@@ -32,12 +39,12 @@
       fill: var(--logo-top-color);
     }
 
-    &.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      // z-index: 100;
-    }
+    // &.is-open {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   pointer-events: auto;
+    //   // z-index: 100;
+    // }
 
     &__icon-close {
       width: 18px;

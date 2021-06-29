@@ -164,6 +164,11 @@ body {
     display: none;
   }
 }
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .mobile-menu__close-btn {
   position: absolute;
   top: 10px;
@@ -176,11 +181,6 @@ body {
 }
 .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
   fill: var(--logo-top-color);
-}
-.mobile-menu__close-btn.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 .mobile-menu__close-btn__icon-close {
   width: 18px;
