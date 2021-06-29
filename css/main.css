@@ -168,6 +168,8 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  width: 100%;
+  height: 100%;
 }
 .mobile-menu__close-btn {
   position: absolute;
@@ -182,11 +184,11 @@ body {
 .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
   fill: var(--logo-top-color);
 }
-.mobile-menu__close-btn__icon-close {
+.mobile-menu__icon-close {
   width: 18px;
   height: 18px;
 }
-.mobile-menu__close-btn__link {
+.mobile-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -194,45 +196,45 @@ body {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.mobile-menu__close-btn__link:hover, .mobile-menu__close-btn__link:focus {
+.mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
 }
-.mobile-menu__close-btn__link-current {
+.mobile-menu__link-current {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02rem;
   color: var(--accent-color);
 }
-.mobile-menu__close-btn__item:not(:last-child) {
+.mobile-menu__item:not(:last-child) {
   margin-bottom: 33px;
 }
-.mobile-menu__close-btn__contacts {
+.mobile-menu__contacts {
   margin-top: 302px;
 }
-.mobile-menu__close-btn__contacts-link {
+.mobile-menu__contacts-link {
   font-weight: 500;
   letter-spacing: 0.02rem;
 }
-.mobile-menu__close-btn .mobile-menu__phone-color {
+.mobile-menu .mobile-menu__phone-color {
   font-size: 34px;
   line-height: 1.17;
   color: var(--accent-color);
 }
-.mobile-menu__close-btn__email {
+.mobile-menu__email {
   font-size: 24px;
   line-height: 1.16;
   margin-top: 32px;
   margin-bottom: 64px;
   color: var(--secondary-text-color);
 }
-.mobile-menu__close-btn__social-list {
+.mobile-menu__social-list {
   display: flex;
 }
-.mobile-menu__close-btn__social-item:not(:last-child) {
+.mobile-menu__social-item:not(:last-child) {
   margin-right: 20px;
 }
-.mobile-menu__close-btn__social-links {
+.mobile-menu__social-links {
   position: relative;
   font-weight: 500;
   font-size: 18px;

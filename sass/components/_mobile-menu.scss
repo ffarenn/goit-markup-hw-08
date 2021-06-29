@@ -21,6 +21,8 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    width: 100%;
+    height: 100%;
     // z-index: 100;
   }
 
@@ -38,89 +40,89 @@
     &:focus {
       fill: var(--logo-top-color);
     }
+  }
 
-    // &.is-open {
-    //   opacity: 1;
-    //   visibility: visible;
-    //   pointer-events: auto;
-    //   // z-index: 100;
-    // }
+  // &.is-open {
+  //   opacity: 1;
+  //   visibility: visible;
+  //   pointer-events: auto;
+  //   // z-index: 100;
+  // }
 
-    &__icon-close {
-      width: 18px;
-      height: 18px;
+  &__icon-close {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02rem;
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
 
-    &__link {
+    &-current {
       font-weight: 500;
       font-size: 40px;
       line-height: 1.17;
       letter-spacing: 0.02rem;
-      color: var(--primary-text-color);
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
-
-      &-current {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02rem;
-
-        color: var(--accent-color);
-      }
-    }
-
-    &__item:not(:last-child) {
-      margin-bottom: 33px;
-    }
-
-    &__contacts {
-      margin-top: 302px;
-    }
-
-    &__contacts-link {
-      font-weight: 500;
-      letter-spacing: 0.02rem;
-    }
-
-    .mobile-menu__phone-color {
-      font-size: 34px;
-      line-height: 1.17;
-      color: var(--accent-color);
-    }
-
-    &__email {
-      font-size: 24px;
-      line-height: 1.16;
-
-      margin-top: 32px;
-      margin-bottom: 64px;
-
-      color: var(--secondary-text-color);
-    }
-
-    &__social-list {
-      display: flex;
-    }
-
-    &__social-item:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    &__social-links {
-      position: relative;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.22;
-      letter-spacing: 0.02rem;
-      text-decoration: none;
 
       color: var(--accent-color);
     }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 33px;
+  }
+
+  &__contacts {
+    margin-top: 302px;
+  }
+
+  &__contacts-link {
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+  }
+
+  .mobile-menu__phone-color {
+    font-size: 34px;
+    line-height: 1.17;
+    color: var(--accent-color);
+  }
+
+  &__email {
+    font-size: 24px;
+    line-height: 1.16;
+
+    margin-top: 32px;
+    margin-bottom: 64px;
+
+    color: var(--secondary-text-color);
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__social-links {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
+
+    color: var(--accent-color);
   }
 }
 
