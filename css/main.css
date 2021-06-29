@@ -258,9 +258,6 @@ body {
   border-radius: 4px;
   transition: color 250ms var(--transition-cubic);
 }
-.buttons:hover, .buttons:focus {
-  color: var(--accent-color);
-}
 
 .modal-btn {
   font-size: 16px;
@@ -277,6 +274,7 @@ body {
   border: none;
 }
 .modal-btn:hover {
+  color: var(----h1-button-text-color);
   cursor: pointer;
 }
 
@@ -822,6 +820,11 @@ body {
   text-transform: uppercase;
   color: var(--h1-button-text-color);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -942,6 +945,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 .task__thumb-description {
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1213,6 +1217,9 @@ body {
   }
   .portfolio__radio-buttons-item:nth-of-type(n + 4) {
     margin-top: 0px;
+  }
+  .portfolio__radio-buttons-item:hover, .portfolio__radio-buttons-item:focus {
+    color: var(--accent-color);
   }
 }
 .portfolio__buttons {

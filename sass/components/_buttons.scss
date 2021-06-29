@@ -3,9 +3,4 @@
   font-size: var(--secondary-font-size);
   border-radius: 4px;
   transition: color 250ms var(--transition-cubic);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }

@@ -31,6 +31,11 @@
       &:nth-of-type(n + 4) {
         margin-top: 0px;
       }
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
   }
 

@@ -12,6 +12,7 @@
   border: none;
 
   &:hover {
+    color: var(----h1-button-text-color);
     cursor: pointer;
   }
 }

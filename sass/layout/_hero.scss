@@ -88,6 +88,13 @@
     color: var(--h1-button-text-color);
   }
 
+  @media screen and (min-width: 768px) {
+    &__title {
+      width: 360px;
+      // margin: 0 auto;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     &__title {
       @include font($fs: 44px, $lh: 60px, $fw: 900);
